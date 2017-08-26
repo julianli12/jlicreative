@@ -1,5 +1,6 @@
 <?php
-if(isset($_POST['email'])) {
+
+if(isset($_POST['contact'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "info@jlicreative.com";
@@ -18,8 +19,9 @@ if(isset($_POST['email'])) {
     // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['contact']) ||
-        !isset($_POST['service']) ||
-        !isset($_POST['message']) ||)) {
+        !isset($_POST['services']) ||
+        !isset($_POST['message']))
+    {
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
@@ -63,9 +65,20 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
+
 @mail($email_to, $email_subject, $email_message, $headers);
+
 ?>
 
 <!-- include your own success html here -->
+<div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <p>Thank You for contacting us! We will be in touch with you very soon.</p>
+</div>
 
-Thank you for contacting us. We will be in touch with you very soon.
+<div id="noty-holder"></div>
+
+<?php
+
+}
+?>

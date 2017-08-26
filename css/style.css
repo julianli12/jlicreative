@@ -1,10 +1,20 @@
+
 /*-------general-------*/
 
 a{
   color: #f37229;
 }
 
-h1, h2{
+b{
+  color:#f37229;
+}
+
+h1{
+  color:#545554;
+  font-size: 42px;
+}
+
+h2{
   color:#545554;
 }
 
@@ -20,20 +30,16 @@ h5{
   font-weight:400;
 }
 
-.hero{
-  width:100%
-}
-
-.space{
-  padding-top: 15px
+.font-feel{
+  text-transform: capitalize;
 }
 
 .frame{
-  margin-top:30px
+  margin-top:30px;
 }
 
 .content{
-  margin-top:70px;
+  padding:40px,0;
 }
 
 
@@ -45,6 +51,25 @@ h5{
   margin: 40px -15px;
 }
 
+.v-center {
+  position: relative;
+  transform: translateY(50%);
+}
+
+.alert{
+  margin-top:70px;
+}
+
+/*-------landing section----------*/
+
+.room{
+  margin-top:50px;
+}
+
+.room img{
+  max-width: 100%;
+  max-height:100%;
+}
 
 
 /*-------contact form----------*/
@@ -55,10 +80,6 @@ input, textarea{
 
 textarea{
   height:130px !important;
-}
-
-form{
-  margin-top:40px;
 }
 
 /*-------Navbar----------*/
@@ -97,17 +118,14 @@ p.navbar-brand{
   border-color: #fff;
 }
 
-p a{
 
-}
-
-/*-------footer----------*/
+/*-------button----------*/
 
 .btn-new {
   color: #fff;
   background-color: #f37229;
-
 }
+
 .btn-new:focus,
 .btn-new.focus {
   color: #fff;
@@ -171,6 +189,25 @@ footer p{
   font-size: 24px;
   font-weight: 500;
   color: #545554;
+}
+
+/*-------responsive----------*/
+
+
+@media (max-width: 767px)  {
+  .navbar-right{
+    padding: 0px
+  }
+
+  .smallcenter{
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px)  {
+  .moveup{
+    top:-50px;
+  }
 }
 
 
@@ -367,9 +404,6 @@ footer p{
   color: red;
 }
 
-/* DEMO */
-
-
 @media (max-width: 640px) {
   .demo-btn {
     min-width: 0;
@@ -378,12 +412,5 @@ footer p{
 
   .m-p-g__controls-close{
     left: 80vw;
-  }
-}
-
-
-@media (max-width: 767px)  {
-  .navbar-right{
-    padding: 0px
   }
 }
