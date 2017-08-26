@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['contact'])) {
+if(!empty($_POST['contact']) && !empty($_POST['name'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "info@jlicreative.com";
@@ -8,10 +8,10 @@ if(isset($_POST['contact'])) {
 
     function died($error) {
         // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
+        echo '<div class="alert alert-danger alert-dismissible" role="alert">';
+        echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+        echo '<p>' .$error. '</p>';
+        echo '</div>';
         die();
     }
 
@@ -22,7 +22,7 @@ if(isset($_POST['contact'])) {
         !isset($_POST['services']) ||
         !isset($_POST['message']))
     {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');
+        died('Sorry, there appears to be a problem with your submission. Please fill in all the fields.');
     }
 
 
@@ -38,11 +38,6 @@ if(isset($_POST['contact'])) {
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-
-
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
 
     $email_message = "Form details below.\n\n";
 
@@ -61,24 +56,20 @@ if(isset($_POST['contact'])) {
 
     $email_from = "website";
 
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
+  // create email headers
+  $headers = 'From: '.$email_from."\r\n".
+  'Reply-To: '.$email_from."\r\n" .
+  'X-Mailer: PHP/' . phpversion();
 
-@mail($email_to, $email_subject, $email_message, $headers);
+  @mail($email_to, $email_subject, $email_message, $headers);
 
-?>
 
-<!-- include your own success html here -->
-<div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <p>Thank You for contacting us! We will be in touch with you very soon.</p>
-</div>
 
-<div id="noty-holder"></div>
-
-<?php
-
+  echo '<div class="alert alert-success alert-dismissible" role="alert">';
+  echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+  echo '<p>Thank You for contacting us! We will be in touch with you very soon.</p>';
+  echo '</div>';
 }
+
+
 ?>

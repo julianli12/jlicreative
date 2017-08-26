@@ -10,7 +10,7 @@
 <body>
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
           <div class="modal-center">
@@ -22,7 +22,7 @@
                   <form class="col-sm-6 col-sm-offset-3" action="/send_form_email.php" method="post" enctype="text/plain">
                     <div class="form-group">
                       <label class="sr-only" for="name">Name</label>
-                      <input type="text" class="form-control"id="name" placeholder="Name (Required)" name="name">
+                      <input type="text" class="form-control" placeholder="Name (Required)" name="name" id="name">
                     </div>
 
                     <div class="form-group">
@@ -54,10 +54,17 @@
           </div>
       </div>
     </div>
-  </div> <!-- modal -->
+  </div> -->
 
   <?php include_once('_navbar.php'); ?>
   <?php include_once('_send_form_email.php'); ?>
+  <div class="failed">
+    <div class="alert alert-danger alert-dismissible hidden" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <p>Thank You for contacting us! We will be in touch with you very soon.</p>
+    </div>
+  </div>
+
 
 
   <!--Landing Section-->
@@ -81,11 +88,10 @@
       <div class="col-xs-12 text-center room">
         <a class="btn btn-new btn-lg" type="button" data-toggle="modal" data-target="#myModal">Get a Quote</a>
       </div>
-
     </div>
   </div>
 
-  
+
 
   <!--photography Section-->
   <hr class="feature-divider " id="photography">
@@ -122,6 +128,7 @@
 
   <!--web Section-->
   <hr class="feature-divider" id="web">
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-offset-1 col-md-6 smallcenter">
@@ -146,7 +153,8 @@
 
   <!--Quote Section-->
   <hr class="feature-divider" id="quote">
-  <div class="container">
+
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-offset-1 col-md-6 smallcenter">
         <p>Pricing</p>
@@ -166,7 +174,7 @@
 
         <!--form-->
 
-        <form name="contactform" method="post" action="index.php">
+        <form name="contactform" method="post" onsubmit="return validateForm()" action="index.php">
           <div class="form-group">
             <label class="sr-only" for="name">Name</label>
             <input type="text" class="form-control" placeholder="Name (Required)" name="name" id="name">

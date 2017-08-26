@@ -57,7 +57,10 @@ h5{
 }
 
 .alert{
-  margin-top:70px;
+  margin-top:20px;
+  width:100%;
+  position:fixed;
+  z-index: 2000;
 }
 
 /*-------landing section----------*/
