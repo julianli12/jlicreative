@@ -20,6 +20,7 @@
           <!-- right options -->
       <div class="collapse navbar-collapse navbar-right" id="collapseMenu">
           <div class="">
+            <a href="/index.php" class="btn ">Home</a>
             <a href="/photography.php" class="btn ">Photography</a>
             <a href="/web.php" class="btn ">Web Design</a>
             <a href="" class="btn btn-new" type="button" data-toggle="modal" data-target="#myModal">Get a Quote</a>

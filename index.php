@@ -7,6 +7,7 @@
     <title>JLi Creative </title>
 </head>
 
+
 <body>
 
   <!-- Modal -->
@@ -73,12 +74,19 @@
       <div class="col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8 text-center">
             <h1 class="feature-heading font-feel">Get more with your story</h1>
       </div>
+
+      <!-- flexible size
+      require a fullheight class in parent parent element
+      <div class="col-xs-12 col-xs-offset-0 text-center hero-image hidden-md hidden-lg">
+        <img src="/img/bg-hero-lg.png" alt="hero image">
+      </div>-->
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center hidden-md hidden-lg">
         <img src="img/bg-hero.png" alt="">
       </div>
       <div class="col-lg-12 col-lg-offset-0 text-center hidden-xs hidden-sm">
         <img src="img/bg-hero-lg.png" alt="">
       </div>
+
     </div>
     <div class="row">
       <div class="col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8 text-center">
@@ -99,7 +107,7 @@
     <div class="row" >
         <div class="col-xs-12 col-md-offset-1 col-md-6 smallcenter">
             <p>Photography</p>
-            <h1 class="feature-heading font-feel">Capture your story</h1>
+            <h1 class="feature-heading font-feel">we capture your story</h1>
             <!-- <h1 class="feature-heading">
                 PERSONAL <br>
                 MEMORABLE <br>
@@ -158,7 +166,7 @@
     <div class="row">
       <div class="col-xs-12 col-md-offset-1 col-md-6 smallcenter">
         <p>Pricing</p>
-        <h1 class="question-heading font-feel">
+        <h1 class="feature-heading font-feel">
             fair quotes
         </h1>
       </div>

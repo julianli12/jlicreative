@@ -15,6 +15,6 @@
     </footer>
 
     <!-- Core JavaScript Files -->
-    <script src="js/jquery-3.2.1.slim.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js" type="text/javascript" ></script>
     <script src="js/script.js" type="text/javascript" ></script>

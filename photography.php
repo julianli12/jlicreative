@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 
   <title>JLi Photography</title>
@@ -25,10 +26,46 @@
     </div>
   </div> -->
 
+  <!-- carousel data-ride = auto start -->
+  <div class="container-fluid room">
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8 text-center">
+            <h1 class="feature-heading font-feel">Photography Service</h1>
+      </div>
+      <div class="carousel fade" data-ride="carousel" id="featured">
+
+      <ol class="carousel-indicators">
+
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active text-center">
+          <h2 >Personal.</h2>
+          <img src="/img/carousel/portrait.jpg" alt="Location photos">
+        </div>
+        <div class="item text-center">
+          <h2>Powerful.</h2>
+          <img src="/img/carousel/location.jpg" alt="Location photos">
+        </div>
+        <div class="item text-center">
+          <h2>Captivating.</h2>
+          <img src="/img/carousel/product.jpg" alt="Location photos">
+        </div>
+      </div> <!-- carousel inner -->
+
+    <!-- Controls
+    <a href="#featured" class="left carousel-control"role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#featured" class="right carousel-control"role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a> -->
+  </div>
+
   <div class="container-fluid content">
     <div class="row">
       <div class="col-lg-12 text-center">
-          <h2>Past Work</h2>
+          <h1 class="featuer-heading font-feel">gallery</h1>
 
           <div class="list-inline hidden-xs hidden-sm hidden-md hidden-lg space" id="filters">
 
@@ -45,61 +82,72 @@
           </div>
       </div>
     </div>
+
+
     <div class="row">
+        <div class="all">
+            <button type="button" class="btn btn-default" id="all">
+              all
+            </button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-default" id="landscape">
+            landscape
+          </button>
+        </div>
+        <div>
+          <a id="street">street</a>
+        </div>
+        <div>
+          <a id="arc">arc</a>
+        </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <div class="m-p-g">
-          <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
-            <img src="/img/landscape/l1.jpg" data-full="/img/landscape/l1.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l2.jpg" data-full="/img/landscape/l2.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l3.jpg" data-full="/img/landscape/l3.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l4.jpg" data-full="/img/landscape/l4.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l5.jpg" data-full="/img/landscape/l5.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l6.jpg" data-full="/img/landscape/l6.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l7.jpg" data-full="/img/landscape/l7.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l8.jpg" data-full="/img/landscape/l8.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l9.jpg" data-full="/img/landscape/l9.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l10.jpg" data-full="/img/landscape/l10.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l11.jpg" data-full="/img/landscape/l11.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l12.jpg" data-full="/img/landscape/l12.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l13.jpg" data-full="/img/landscape/l13.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l14.jpg" data-full="/img/landscape/l14.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l15.jpg" data-full="/img/landscape/l15.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l16.jpg" data-full="/img/landscape/l16.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l17.jpg" data-full="/img/landscape/l17.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l18.jpg" data-full="/img/landscape/l18.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l19.jpg" data-full="/img/landscape/l19.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/landscape/l20.jpg" data-full="/img/landscape/l20.jpg" class="m-p-g__thumbs-img" />
+        	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+            <div class="landscape">
+              <img src="/img/landscape/l1.jpg" data-full="/img/landscape/l1.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l10.jpg" data-full="/img/landscape/l10.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l3.jpg" data-full="/img/landscape/l3.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l4.jpg" data-full="/img/landscape/l4.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l14.jpg" data-full="/img/landscape/l14.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l7.jpg" data-full="/img/landscape/l7.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l8.jpg" data-full="/img/landscape/l8.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l2.jpg" data-full="/img/landscape/l2.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l6.jpg" data-full="/img/landscape/l6.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l12.jpg" data-full="/img/landscape/l12.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l19.jpg" data-full="/img/landscape/l19.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l11.jpg" data-full="/img/landscape/l11.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l15.jpg" data-full="/img/landscape/l15.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l17.jpg" data-full="/img/landscape/l17.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l13.jpg" data-full="/img/landscape/l13.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/landscape/l20.jpg" data-full="/img/landscape/l20.jpg" class="m-p-g__thumbs-img" />
+            </div>
 
-            <img src="/img/street/s1.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s2.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s3.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s4.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s5.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s6.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s7.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s8.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s9.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s10.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s11.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s12.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s13.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s14.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s15.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s16.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s17.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/street/s18.jpg" class="m-p-g__thumbs-img" />
+            <div class="street">
+              <img src="/img/street/s1.jpg" data-full="/img/street/s1.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s2.jpg" data-full="/img/street/s2.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s3.jpg" data-full="/img/street/s3.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s4.jpg" data-full="/img/street/s4.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s5.jpg" data-full="/img/street/s5.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s7.jpg" data-full="/img/street/s7.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s8.jpg" data-full="/img/street/s8.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s9.jpg" data-full="/img/street/s9.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s10.jpg" data-full="/img/street/s10.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s11.jpg" data-full="/img/street/s11.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s14.jpg" data-full="/img/street/s14.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s16.jpg" data-full="/img/street/s16.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/street/s18.jpg" data-full="/img/street/s18.jpg" class="m-p-g__thumbs-img" />
+            </div>
 
-            <img src="/img/arc/b1.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/arc/b2.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/arc/b4.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/arc/b5.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/arc/b6.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/arc/b7.jpg" class="m-p-g__thumbs-img" />
-            <img src="/img/arc/b8.jpg" class="m-p-g__thumbs-img" />
+            <div class="arc">
+              <img src="/img/arc/b8.jpg" data-full="/img/arc/b8.jpg" class="m-p-g__thumbs-img" />
+              <img src="/img/arc/b2.jpg" data-full="/img/arc/b2.jpg" class="m-p-g__thumbs-img" />
 
-          </div>
+            </div>
 
-          <div class="m-p-g__fullscreen"></div>
+        	</div>
+
+        	<div class="m-p-g__fullscreen"></div>
         </div>
       </div>
     </div>
