@@ -27,28 +27,28 @@
   </div> -->
 
   <!-- carousel data-ride = auto start -->
-  <div class="container-fluid room">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-xs-offset-1 col-xs-10 col-lg-offset-2 col-lg-8 text-center">
-            <h1 class="feature-heading font-feel">Photography Service</h1>
+            <!-- <p class="font-feel">Photography Service</p> -->
       </div>
       <div class="carousel fade" data-ride="carousel" id="featured">
 
-      <ol class="carousel-indicators">
-
-      </ol>
+      <!-- javascript activated carousel -->
+      <!-- <ol class="carousel-indicators">
+      </ol> -->
 
       <div class="carousel-inner">
         <div class="item active text-center">
-          <h2 >Personal.</h2>
+          <h1 >Personal.</h1>
           <img src="/img/carousel/portrait.jpg" alt="Location photos">
         </div>
         <div class="item text-center">
-          <h2>Powerful.</h2>
+          <h1>Powerful.</h1>
           <img src="/img/carousel/location.jpg" alt="Location photos">
         </div>
         <div class="item text-center">
-          <h2>Captivating.</h2>
+          <h1>Captivating.</h1>
           <img src="/img/carousel/product.jpg" alt="Location photos">
         </div>
       </div> <!-- carousel inner -->
@@ -65,43 +65,39 @@
   <div class="container-fluid content">
     <div class="row">
       <div class="col-lg-12 text-center">
-          <h1 class="featuer-heading font-feel">gallery</h1>
+        <h1 class="featuer-heading font-feel">gallery</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="toggles text-center hidden-xs">
+        <div class="col-sm-2 col-xs-offset-2 col-md-2 col-md-offset-2 btn" >
+            <a class="" id="all"><img src="/img/icons/all.png"></img><br>All</a>
+        </div>
+        <div class="col-sm-2 col-md-2">
 
-          <div class="list-inline hidden-xs hidden-sm hidden-md hidden-lg space" id="filters">
+          <a class="btn" id="landscape"><img src="/img/icons/landscape.png"></img><br>Landscape</a>
+        </div>
+        <div class="col-sm-2 col-md-2">
 
-                  <button data-filter="*" type="button" class="btn btn-new btn-square btn-raised">All</button>
+          <a class="btn" id="street"><img src="/img/icons/portrait.png"></img><br>Portrait</a>
+        </div>
+        <div class="col-sm-2 col-md-2">
 
-                  <button data-filter=".prototype" type="button" class="btn btn-new btn-square btn-raised">Landscape</button>
+          <a class="btn" id="arc"><img src="/img/icons/building.png"></img><br>Architecture</a>
+        </div>
+      </div>
 
-                  <button data-filter=".mock" type="button" class="btn btn-new btn-square btn-raised">Portrait</button>
-
-                  <button data-filter=".graphics" type="button" class="btn btn-new btn-square btn-raised">Action</button>
-
-                  <button data-filter=".photography" type="button" class="btn btn-new btn-square btn-raised">City</button>
-
-          </div>
+      <div class="toggles btn-group-justified text-center hidden-sm hidden-md hidden-lg">
+          <a class="btn " id="all">all</a>
+          <a class="btn" id="landscape">landscape</a>
+          <a class="btn" id="street">street</a>
+          <a class="btn" id="arc">arc</a>
       </div>
     </div>
 
-
     <div class="row">
-        <div class="all">
-            <button type="button" class="btn btn-default" id="all">
-              all
-            </button>
-        </div>
-        <div>
-          <button type="button" class="btn btn-default" id="landscape">
-            landscape
-          </button>
-        </div>
-        <div>
-          <a id="street">street</a>
-        </div>
-        <div>
-          <a id="arc">arc</a>
-        </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <!-- max 28 -->
         <div class="m-p-g">
         	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
             <div class="landscape">

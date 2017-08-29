@@ -82,7 +82,7 @@ $(function(){
       street.slideDown();
     }
     if (arc.is(":hidden")){
-      street.slideDown();
+      arc.slideDown();
     }
   });
 

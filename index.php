@@ -165,23 +165,22 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-offset-1 col-md-6 smallcenter">
-        <p>Pricing</p>
+        <p>Questions</p>
         <h1 class="feature-heading font-feel">
-            fair quotes
+            contact
         </h1>
       </div>
     </div>
     <div class="row text-center">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-          <h2 class="font-feel hidden-xs">get an assessment</h2>
-          <p> You work hard for your money, to get you the best value we form the prices strictly based on your needs. Every project have different needs so drop us a line below or at <a href="mailto:info@jlicreative.com">info@jlicreative.com</a></p>
+          <p> You work hard for your money, to get you the best value we tailor our packages strictly around your needs. Every project is different so drop us a line below or at <a href="mailto:info@jlicreative.com">info@jlicreative.com</a>.</p>
         </div>
     </div>
     <div class="row text-center">
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
 
         <!--form-->
-
+        <h2 class="font-feel hidden-xs">get an quote</h2>
         <form name="contactform" method="post" onsubmit="return validateForm()" action="index.php">
           <div class="form-group">
             <label class="sr-only" for="name">Name</label>

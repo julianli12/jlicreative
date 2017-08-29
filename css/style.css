@@ -13,23 +13,23 @@ b{
 }
 
 h1{
-  color:#545554;
+  color:#505050;
   font-size: 42px;
 }
 
 h2,h3{
-  color:#545554;
+  color:#505050;
 }
 
 .row p{
   font-size:21px;
-  color:#545554;
+  color:#505050;
   font-weight:200;
 }
 
 h5{
   font-size:18px;
-  color:#545554;
+  color:#505050;
   font-weight:400;
 }
 
@@ -113,7 +113,7 @@ p.navbar-brand{
 }
 
 .navbar-default .navbar-brand{
-    color: #545554;
+    color: #505050;
 }
 
 .navbar-right{
@@ -158,7 +158,7 @@ p.navbar-brand{
   opacity:0;
 }
 
-.carousel .item h2{
+.carousel .item h1{
   background-color: white;
   color:#f37229;
 }
@@ -174,6 +174,19 @@ p.navbar-brand{
   background-position: center center;
   width:100%;
   height:100%;
+}
+
+/*-------photography page----------*/
+.toggles a{
+  color: #505050;
+}
+
+.toggles a:hover{
+  color: #f37229;
+}
+
+.toggles img{
+  max-width:40px;
 }
 
 /*-------button----------*/
@@ -245,7 +258,7 @@ footer img{
 footer p{
   font-size: 24px;
   font-weight: 500;
-  color: #545554;
+  color: #505050;
 }
 
 /*-------responsive----------*/
@@ -275,9 +288,6 @@ footer p{
   }
 }
 
-@@media (min-width: 1200px) {
-
-}
 
 /*-------gallery----------*/
 .m-p-g {

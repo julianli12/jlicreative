@@ -18,3 +18,4 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js" type="text/javascript" ></script>
     <script src="js/script.js" type="text/javascript" ></script>
+    <script src="https://use.fontawesome.com/11925eaf5c.js"></script>
