@@ -10,55 +10,11 @@
 
 <body>
 
+  <?php include_once('_navbar.php'); ?> 
   <!-- Modal -->
-  <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-center">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <div class="container-fluid">
-                <div class="row">
-                  <h2 class="modal-title text-center" id="myModalLabel">Get a Quote</h2>
-                  <form class="col-sm-6 col-sm-offset-3" action="/send_form_email.php" method="post" enctype="text/plain">
-                    <div class="form-group">
-                      <label class="sr-only" for="name">Name</label>
-                      <input type="text" class="form-control" placeholder="Name (Required)" name="name" id="name">
-                    </div>
-
-                    <div class="form-group">
-                      <label class="sr-only" for="contact">Contact Information</label>
-                      <input type="text" class="form-control" id="contact" placeholder="Phone Number or Email (Required)" name="email">
-                    </div>
-
-
-                    <div class="form-group">
-                      <label class="sr-only" for="service">What Service Do You Need</label>
-                      <select id="service" class="form-control" name="services">
-                        <option value="">Service Required</option>
-                        <option value="">Photography + Web Combo</option>
-                        <option value="">Photography</option>
-                        <option value="">Web Design</option>
-                        <option value="">Other</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group">
-                      <label class="sr-only" for="message">What Would You Like To Know</label>
-                      <textarea type="text" id="message" class="form-control" placeholder="What Would You Like To Know" name="message"></textarea>
-                    </div>
-                    <input class="btn btn-lg btn-new" type="submit" name="" value="Inquire">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div> -->
-
-  <?php include_once('_navbar.php'); ?>
+  <?php include_once('_modal.php'); ?>
   <?php include_once('_send_form_email.php'); ?>
+
   <div class="failed">
     <div class="alert alert-danger alert-dismissible hidden" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -80,12 +36,17 @@
       <div class="col-xs-12 col-xs-offset-0 text-center hero-image hidden-md hidden-lg">
         <img src="/img/bg-hero-lg.png" alt="hero image">
       </div>-->
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center hidden-md hidden-lg">
+      <div class="col-lg-12 col-lg-offset-0 text-center hidden-sm hidden-md hidden-lg">
+        <img src="img/bg-hero-xs.png" alt="">
+      </div>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center hidden-xs hidden-md hidden-lg">
         <img src="img/bg-hero.png" alt="">
       </div>
       <div class="col-lg-12 col-lg-offset-0 text-center hidden-xs hidden-sm">
         <img src="img/bg-hero-lg.png" alt="">
       </div>
+
+
 
     </div>
     <div class="row">
@@ -160,7 +121,7 @@
   </div>
 
   <!--Quote Section-->
-  <hr class="feature-divider" id="quote">
+  <hr class="feature-divider">
 
   <div class="container-fluid">
     <div class="row">

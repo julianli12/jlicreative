@@ -1,3 +1,4 @@
+//regular form validation
 function validateForm() {
   var name = document.querySelector('#name').value;
   var contact = document.querySelector('#contact').value;
@@ -32,6 +33,42 @@ function validateForm() {
   }
 }
 
+//form validation for modal
+function validateFormModal() {
+  var name = document.querySelector('#nameModal').value;
+  var contact = document.querySelector('#contactModal').value;
+
+  var error ="";
+  var proceed = true;
+
+  //name check
+  if (name == "") {
+    error = "Please include your name";
+    proceed = false;
+  }
+
+  //contact check
+  if (contact ==""){
+    if (error =="" ) {
+      error = "Please include your contact information";
+    }else{
+      error += " and contact information";
+    }
+    proceed = false;
+  }
+
+  if (proceed) {
+    return true;
+  }else{
+
+    document.querySelector('.alert-modal').classList.toggle("hidden");
+    document.querySelector('.alert-modal p').innerHTML = error;
+
+    return false;
+  }
+}
+
+//auto start carousel at start up
 $(function(){
   //carousel auto start
   $('.carousel').carousel({
@@ -54,27 +91,29 @@ $(function(){
   }
 
   //full height
-  var wheight = $(window).height() * 0.7; //get height of window
+  var wheight = $(window).height(); //get height of window
   $('.fullheight').css('height', wheight);
 
   //convert image from hero to background image
-  $('.hero-image img').each(function(){
+  $('#featured .item img').each(function(){
     var imgSrc = $(this).attr('src');
-    $(this).parent().parent().css({'background-image': 'url('+imgSrc+')'});
+    $(this).parent().css({'background-image': 'url('+imgSrc+')'});
     $(this).remove();
   });
 
   //adjust height of .fullheight elements on window resize
   $(window).resize(function(){
-    wheight = $(window).height() * 0.7;
+    wheight = $(window).height();
     $('.fullheight').css('height', wheight);
   });
 
   var landscape = $('.landscape');
   var street = $('.street');
   var arc = $('.arc');
+
+
   //hide groups
-  $('#all').click(function(){
+  $('.all-control').click(function(){
     if (landscape.is(":hidden")){
       landscape.slideDown();
     }
@@ -84,9 +123,13 @@ $(function(){
     if (arc.is(":hidden")){
       arc.slideDown();
     }
+    $(this).addClass("activate");
+    $('.landscape-control').removeClass("activate");
+    $('.street-control').removeClass("activate");
+    $('.arc-control').removeClass("activate");
   });
 
-  $('#landscape').click(function(){
+  $('.landscape-control').click(function(){
     if (landscape.is(":hidden")){
       landscape.slideDown("slow");
     }
@@ -96,9 +139,13 @@ $(function(){
     if (!arc.is(":hidden")){
       arc.slideUp("slow");
     }
+    $(this).addClass("activate");
+    $('.all-control').removeClass("activate");
+    $('.street-control').removeClass("activate");
+    $('.arc-control').removeClass("activate");
   });
 
-  $('#street').click(function(){
+  $('.street-control').click(function(){
     if (!landscape.is(":hidden")){
       landscape.slideUp("slow");
     }
@@ -108,9 +155,13 @@ $(function(){
     if (!arc.is(":hidden")){
       arc.slideUp("slow");
     }
+    $(this).addClass("activate");
+    $('.all-control').removeClass("activate");
+    $('.landscape-control').removeClass("activate");
+    $('.arc-control').removeClass("activate");
   });
 
-  $('#arc').click(function(){
+  $('.arc-control').click(function(){
     if (!landscape.is(":hidden")){
       landscape.slideUp("slow");
     }
@@ -120,5 +171,9 @@ $(function(){
     if (arc.is(":hidden")){
       arc.slideDown("slow");
     }
+    $(this).addClass("activate");
+    $('.all-control').removeClass("activate");
+    $('.street-control').removeClass("activate");
+    $('.landscape-control').removeClass("activate");
   });
 })
